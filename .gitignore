@@ -1,0 +1,9 @@
+final-plan.md
+memory.md
+Microsoft 2025 Annual Report.pdf
+__pycache__/
+*.pyc
+.env.local
+.env
+faiss_index/
+Voice-Agent/tarvus api key
