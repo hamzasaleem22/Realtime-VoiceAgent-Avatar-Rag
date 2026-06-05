@@ -1,7 +1,7 @@
 # RAG Backend — Microsoft 2025 Annual Report
 
 ![Status: Planned](https://img.shields.io/badge/status-Planned-blue)
-AIzaSyCp3yTkYnRK_FfnSeYFaLTYrfLQn1WnAew
+
 ## Architecture Overview
 
 ```
