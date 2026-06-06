@@ -226,7 +226,7 @@ async def entrypoint(ctx: JobContext):
         ),
         tts=inference.TTS(
             model="cartesia/sonic-3-latest",
-            voice="a167e0f3-df7e-4d52-a9c3-f949145efdab",
+            voice="9626c31c-bec5-4cca-baa8-f8ba9e84c8bc",
             language="en-US",
         ),
         turn_handling=TurnHandlingOptions(
@@ -253,8 +253,8 @@ async def entrypoint(ctx: JobContext):
     )
 
     avatar = tavus.AvatarSession(
-        replica_id="r72f7f7f7c8b",
-        persona_id="p31eb25a9202",
+        replica_id="rf4e9d9790f0",
+        persona_id="pdac61133ac5",
     )
 
     await avatar.start(session, room=ctx.room)
