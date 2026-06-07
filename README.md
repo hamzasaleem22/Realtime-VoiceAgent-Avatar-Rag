@@ -4,7 +4,9 @@ An enterprise-grade real-time voice AI agent with a photorealistic avatar, power
 
 <img width="715" height="447" alt="Screenshot From 2026-06-07 13-24-45" src="https://github.com/user-attachments/assets/4104ee38-fb38-4488-aa5a-8543887a06fd" />
 
+## Watch the demo here :
 
+https://www.loom.com/share/6698ddb1982c40828377ed9a8d113dfc
 
 ---
 
