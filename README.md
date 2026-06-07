@@ -1,5 +1,7 @@
 # Realtime Voice Agent + Avatar + RAG
 An enterprise-grade real-time voice AI agent with a photorealistic avatar, powered by **LiveKit Agents**, with a **RAG knowledge base** for intelligent document Q&A.
+
+
 <img width="715" height="447" alt="Screenshot From 2026-06-07 13-24-45" src="https://github.com/user-attachments/assets/4104ee38-fb38-4488-aa5a-8543887a06fd" />
 
 
