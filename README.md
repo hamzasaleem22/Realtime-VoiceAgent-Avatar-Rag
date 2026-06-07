@@ -1,6 +1,8 @@
 # Realtime Voice Agent + Avatar + RAG
-
 An enterprise-grade real-time voice AI agent with a photorealistic avatar, powered by **LiveKit Agents**, with a **RAG knowledge base** for intelligent document Q&A.
+<img width="715" height="447" alt="Screenshot From 2026-06-07 13-24-45" src="https://github.com/user-attachments/assets/4104ee38-fb38-4488-aa5a-8543887a06fd" />
+
+
 
 ---
 
@@ -253,6 +255,34 @@ docker run -it --env-file .env.local voice-agent
 ```
 
 ---
+
+# After all Depenedies and setup installed to run this project :
+
+## Common Commands
+```bash
+### Start RAG server
+cd Rag-Langchain/Semantic-Search-Chatbot/Rag_Backend/pipeline
+python3 -m src.cli --server
+
+### Run ingestion manually
+python3 -m src.cli --ingest
+
+### Query via CLI
+python3 -m src.cli --query "What was Microsoft revenue in 2025?"
+
+### Start Voice Agent
+cd Voice-Agent/Backend
+uv run agent.py dev
+
+### RUn Voice AGent Frotend:
+uv run agent.py dev
+
+
+it run directly on lviekti cloud . 
+
+to permanently depolyed ot olivekit cloud run this commands 
+ lk depoly agent 
+```
 
 ## License
 
