@@ -19,13 +19,10 @@ router = APIRouter()
 
 @router.get("/health", response_model=HealthResponse)
 async def health():
-    from src.ingestion.vectorstore import load_index
-    from src.config import BASE_DIR
-    import os
+    from src.pipeline import is_indexed, get_vectorstore
 
-    index_path = str(BASE_DIR / "faiss_index")
-    if os.path.exists(index_path):
-        vs = load_index(index_path)
+    if is_indexed():
+        vs = get_vectorstore()
         chunk_count = vs.index.ntotal
     else:
         chunk_count = 0

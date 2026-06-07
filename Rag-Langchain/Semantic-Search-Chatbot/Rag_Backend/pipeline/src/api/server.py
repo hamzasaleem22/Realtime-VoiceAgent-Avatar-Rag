@@ -7,7 +7,8 @@ from src.pipeline import ingest, is_indexed
 from src.api.routes import router
 from src.generation.llm import get_llm, clear_llm
 from src.retrieval.reranker import clear_reranker
-from src.retrieval.embedder import clear_embeddings
+from src.retrieval.embedder import clear_embeddings, get_embeddings
+from src.pipeline import get_vectorstore
 
 logger = logging.getLogger(__name__)
 
@@ -16,10 +17,12 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     if is_indexed():
         logger.info("Existing FAISS index found")
+        get_vectorstore()
     else:
         logger.info("No index found, running ingestion...")
         ingest()
     get_llm()
+    get_embeddings()
     logger.info("Server ready")
     yield
     clear_llm()
